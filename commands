@@ -1,0 +1,11 @@
+mvn spring-boot:run
+mvn clean spring-boot:run
+
+# Package the application
+mvn clean package
+
+# Run the generated JAR
+java -jar target/your-app-name-version.jar
+
+
+database -> repository -> service(DTO conversion) -> controller(http) -> client
