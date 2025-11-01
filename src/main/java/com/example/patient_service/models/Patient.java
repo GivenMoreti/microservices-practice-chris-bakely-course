@@ -1,6 +1,7 @@
 package com.example.patient_service.models;
 
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.UUID;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -34,7 +35,7 @@ public class Patient {
     private String address;
 
     @NotNull
-    private LocalDate registeredDate;
+    private LocalDate registeredDate = LocalDate.now();
     @NotNull
     private LocalDate dateOfBirth;
 
